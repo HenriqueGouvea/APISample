@@ -17,7 +17,7 @@ namespace API.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ProductViewModel>>> Get()
         {
-            return new OkObjectResult(new List<ProductViewModel> { new ProductViewModel { Id = "1000", Name = "Keyboard", Price = "50€", Available = true } });
+            return new OkObjectResult(new List<ProductViewModel> { new ProductViewModel { Id = "1000", Name = "Keyboard", Price = 50, Available = true } });
         }
     }
 }
